@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+
+
+	<context-param>
+			<param-name>userName</param-name>
+			<param-value>root</param-value>
+		</context-param>
+
+		<context-param>
+			<param-name>password</param-name>
+			<param-value>root</param-value>
+		</context-param>
+
+
+		<context-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:mysql://localhost/CtsPune</param-value>
+		</context-param>
+
+
+		<context-param>
+			<param-name>driver</param-name>
+			<param-value>com.mysql.jdbc.Driver</param-value>
+		</context-param>
+
+
+
+
+
+
+
+
+	<servlet>
+		<servlet-name>maxy</servlet-name>
+		<servlet-class>com.cts.servlet.SourceServlet</servlet-class>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>maxy</servlet-name>
+		<url-pattern>/ss</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>cs2</servlet-name>
+		<servlet-class>com.cts.servlet.ConnectionServlet2</servlet-class>
+
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>cs2</servlet-name>
+		<url-pattern>/cs2</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>cs1</servlet-name>
+		<servlet-class>com.cts.servlet.ConnectionServlet</servlet-class>
+
+	
+
+
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>cs1</servlet-name>
+		<url-pattern>/cs1</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	
+	
+
+  
+</web-app>
